@@ -1,16 +1,16 @@
-Docker commands to set up container:
-
+## Docker commands to set up container:
+```
 docker build -t rl-gymnasium .
 
 docker run -dp 8888:8888 rl-gymnasium
-
+```
 
 To run a shell in the container:
 
-docker exec -it <mycontainer> sh
+`docker exec -it <mycontainer> sh`
 
-SAMPLE JUPYTER NOTEBOOK CODE:
-
+## SAMPLE JUPYTER NOTEBOOK CODE:
+```
 import gymnasium as gym
 from IPython import display
 import matplotlib.pyplot as plt
@@ -31,3 +31,4 @@ for _ in range(1000):
     if terminated or truncated:
         observation, info = env.reset()
 env.close()
+```
