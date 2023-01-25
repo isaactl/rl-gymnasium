@@ -12,16 +12,16 @@ RUN apt-get update \
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*
 
-# Install pip
+# Update pip
 RUN python3 -m pip install --upgrade pip
-
-# Install Jupyter pre-requisites
 
 # Install Jupyter notebook
 COPY requirements_jn.txt /tmp/
 RUN python3 -m pip install -r /tmp/requirements_jn.txt
 
 # Install Gymnasium
+COPY requirements_gymnasium.txt /tmp/
+RUN python3 -m pip install -r /tmp/requirements_gymnasium.txt
 
 # Add directory
 RUN mkdir /ds
