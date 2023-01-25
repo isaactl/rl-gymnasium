@@ -32,3 +32,11 @@ for _ in range(1000):
         observation, info = env.reset()
 env.close()
 ```
+
+## Additional Resources
+-[Gymnasium Github](https://github.com/Farama-Foundation/Gymnasium)
+
+## Future Work
+-add Kubernetes support for scalability
+-add separate container for RL tools
+-full example of training and running a prediction model
