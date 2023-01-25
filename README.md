@@ -34,9 +34,10 @@ env.close()
 ```
 
 ## Additional Resources
--[Gymnasium Github](https://github.com/Farama-Foundation/Gymnasium)
+- [Gymnasium Github](https://github.com/Farama-Foundation/Gymnasium)
+- [README formatting](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
 ## Future Work
--add Kubernetes support for scalability
--add separate container for RL tools
--full example of training and running a prediction model
+- add Kubernetes support for scalability
+- add separate container for RL tools
+- full example of training and running a prediction model
