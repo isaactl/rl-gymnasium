@@ -1,6 +1,7 @@
 # BASE
-FROM ubuntu:18.04
+FROM ubuntu:22.04
 
+# Disable dialog boxes temporarily
 ENV DEBIAN_FRONTEND noninteractive
 
 # Ubuntu packages
@@ -29,6 +30,7 @@ RUN mkdir /ds
 # Enable jupyter widgets
 RUN jupyter nbextension enable --py --sys-prefix widgetsnbextension
 
+# reset env flag to maintain scalability
 ENV DEBIAN_FRONTEND teletype
 
 # Jupyter notebook with virtual frame buffer for rendering
