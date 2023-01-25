@@ -1,5 +1,5 @@
 # BASE
-FROM ubuntu:22.04
+FROM ubuntu:20.04
 
 # Disable dialog boxes temporarily
 ENV DEBIAN_FRONTEND noninteractive

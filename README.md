@@ -34,6 +34,7 @@ env.close()
 ```
 
 ## Additional Resources
+- [Dockerfile Tips](https://octopus.com/blog/using-ubuntu-docker-image)
 - [Gymnasium Github](https://github.com/Farama-Foundation/Gymnasium)
 - [README formatting](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
